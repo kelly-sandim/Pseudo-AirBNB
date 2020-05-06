@@ -1,0 +1,20 @@
+@font-face {
+    font-family: cereal-medium;
+    src: url("./assets/fonts/AirbnbCerealMedium.ttf");
+}
+
+@font-face {
+    font-family: cereal-bold;
+    src: url("./assets/fonts/AirbnbCerealBold.ttf");
+}
+
+*
+{
+    font-family: cereal-medium;
+}
+
+h1
+{
+    font-family: cereal-bold;
+    margin-top: 10vh;
+}
