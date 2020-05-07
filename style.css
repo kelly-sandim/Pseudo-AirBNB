@@ -16,5 +16,29 @@
 h1
 {
     font-family: cereal-bold;
-    margin-top: 10vh;
+    margin-top: 5vh;
+}
+
+#carouselExampleCaptions {
+    margin-top: 12vh;
+}
+
+.rooms {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.carousel {
+    height: 450px;
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+    height: 100%;
+}
+
+.carousel-item {
+    text-align: center;
 }
