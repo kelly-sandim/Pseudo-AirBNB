@@ -27,15 +27,15 @@
 }
 
 h1 {
-    font-family: cereal-bold;
-    margin-top: 1vh;
+    font-family: cereal-bold;    
+    margin-top:  -10vh;
 }
 
 #carouselExampleCaptions {
     margin-top: 5vh;
 }
 
-.rooms {
+.rooms {    
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -53,6 +53,18 @@ h1 {
 
 .carousel-item {
     text-align: center;
+}
+
+.carousel-caption h5, p {
+    color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #731ab7;
+    text-shadow: 0px 3px 2px #731ab7;
+}
+
+.ca.carousel-caption h5, .h5, h5
+{
+    font-size: 3.25rem;
 }
 
 /* Footer */
