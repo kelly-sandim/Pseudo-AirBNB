@@ -47,7 +47,7 @@ fetch(apiUrl)
       var h6 = document.createElement("h6");
       h6.className = "card-text"
       // Inserir texto no elemento h6
-      h6.innerHTML = "R$ " + room.price + "/noite";
+      h6.innerHTML = "<strong>R$ " + room.price + "</strong>/noite";
 
       // Inserir texto na div
       div.appendChild(h6);
