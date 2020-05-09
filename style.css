@@ -32,6 +32,9 @@ a.navbar-brand {
 
 button.btn.btn-outline-success.my-2.my-sm-0 {
     margin-left: 20px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 25px -5px #63DC3E; 
+    box-shadow: 0px 0px 25px -5px #63DC3E;
 }
 
 h1 {
@@ -80,6 +83,13 @@ h1 {
 {
     font-size: 1.75rem;
 }
+
+form.form-inline {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 /* Footer */
 
