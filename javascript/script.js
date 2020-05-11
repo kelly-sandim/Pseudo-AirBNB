@@ -13,46 +13,50 @@ fetch(apiUrl)
 			var rooms = document.getElementById("rooms");
 
 			// Nova div representando um quarto
-			var div = document.createElement("div");
+			var divCols = document.createElement("div");
 			// Definir classe da div
-			div.classList.add("card", "col-m-4", "col-lg-4");
+            divCols.classList.add("col-m-4", "col-lg-4");
+            
+            var div = document.createElement("div");            
+            div.classList.add("card", "col-12");
 
-      //Imagem que vai ser inserida na div do quaeto
-      var img = document.createElement("img");
-      img.className = "card-img-top"
-      img.src = room.photo;
+            //Imagem que vai ser inserida na div do quaeto
+            var img = document.createElement("img");
+            img.className = "card-img-top"
+            img.src = room.photo;
 
-      // Inserir imagem na div
-      div.appendChild(img);
-      
-			// Título que vai ser inserido na div do quarto
-      var h5 = document.createElement("h5");
-      h5.className = "card-title"
-			// Inserir texto no elemento h5
-			h5.innerHTML = room.name;
+            // Inserir imagem na div
+            div.appendChild(img);
+            
+                    // Título que vai ser inserido na div do quarto
+            var h5 = document.createElement("h5");
+            h5.className = "card-title"
+                    // Inserir texto no elemento h5
+                    h5.innerHTML = room.name;
 
-			// Inserir texto na div
-      div.appendChild(h5);
-      
-      // Descrição que vai ser inserido na div do quarto
-      var p = document.createElement("p");
-      p.className = "card-text"
-      // Inserir texto no elemento p
-      p.innerHTML = room.property_type;
+                    // Inserir texto na div
+            div.appendChild(h5);
+            
+            // Descrição que vai ser inserido na div do quarto
+            var p = document.createElement("p");
+            p.className = "card-text"
+            // Inserir texto no elemento p
+            p.innerHTML = room.property_type;
 
-      // Inserir texto na div
-      div.appendChild(p);
+            // Inserir texto na div
+            div.appendChild(p);
 
-      // Preço que vai ser inserido na div do quarto
-      var h6 = document.createElement("h6");
-      h6.className = "card-text"
-      // Inserir texto no elemento h6
-      h6.innerHTML = "<strong>R$ " + room.price + "</strong>/noite";
+            // Preço que vai ser inserido na div do quarto
+            var h6 = document.createElement("h6");
+            h6.className = "card-text"
+            // Inserir texto no elemento h6
+            h6.innerHTML = "<strong>R$ " + room.price + "</strong>/noite";
 
-      // Inserir texto na div
-      div.appendChild(h6);
+            // Inserir texto na div
+            div.appendChild(h6);
 
+            divCols.appendChild(div);
 			// Inserir div no elemento principal
-			rooms.appendChild(div);
+			rooms.appendChild(divCols);
 		});
 	});

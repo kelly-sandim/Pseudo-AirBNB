@@ -23,7 +23,8 @@
 
 .rooms {    
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .navbar-light .navbar-brand {
@@ -54,17 +55,45 @@ h1 {
     margin-top: 5vh;
 }
 
+
+
 p.card-text {
     color: #63dc3e;
 }
 
 h5.card-title, p.card-text {
     text-align: start;
-   
+    justify-content: left;
 }
 
 h6.card-text {
     text-align: end;
+    justify-content: right;
+}
+
+div.card {
+    padding: 10px;    
+}
+
+div.card:hover {
+    box-shadow:  0px 8px 10px 0px #63DC3E;
+}
+
+
+
+h6.card-text {
+    font-weight: normal;
+    font-family: cereal-light;
+}
+
+div.controls-top {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+i.fas.fa-chevron-left:hover, i.fas.fa-chevron-right:hover {
+    color: #63DC3E;
 }
 
 .carousel {
@@ -99,6 +128,11 @@ h6.card-text {
     font-size: 1.75rem;
 }
 
+img.card-img-top {    
+    height: 300px;
+    margin-bottom: 6px;
+}
+
 section.formulario-busca {
     padding: 50px;
     -webkit-box-shadow: 0px 0px 25px -5px #63DC3E; 
@@ -115,26 +149,7 @@ button.btn.btn-success.col-md-2 {
     border-right: 3px solid #63DC3E;
 }
 
-div.card {
-    padding: 10px;
-    margin-bottom: 20px;    
-    height: 450px;
-}
 
-div.card:hover {
-    box-shadow:  0px 8px 10px 0px #63DC3E;
-}
-
-
-img.card-img-top {    
-    height: 300px;
-    margin-bottom: 6px;
-}
-
-h6.card-text {
-    font-weight: normal;
-    font-family: cereal-light;
-}
 
 /* Footer */
 
@@ -149,7 +164,6 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    margin-top: -50px;
     background: #63dc3e !important;
 }
 #footer h5{
